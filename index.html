@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapartment</title>
+    <script src="build/index.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript">
+      var React = require('react')
+      var ReactDOM = require('react-dom')
+      var Mapartment = require('mapartment').default
+
+      var root = React.createFactory(Mapartment)({ baseUrl: 'http://localhost:4567'});
+      ReactDOM.render(root, document.getElementById('root'))
+    </script>
+  </body>
+</html>
